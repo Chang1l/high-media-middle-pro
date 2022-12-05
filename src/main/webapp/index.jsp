@@ -80,7 +80,15 @@ div:hover {animation-play-state: paused;}
 .blink {
   animation: animation: blink 2.5s linear infinite
 /* 후기 슬라이드 스타일 영역*/
+}
+@media (max-width: 768px){
 
+	 .toptext { font-size :18px; 
+	 				 }
+	 .toph1{
+	     line-height: normal !important;
+	 }
+}
 </style>
 
 <%@ include file="header.jsp" %>
@@ -115,17 +123,13 @@ location.href = "index.me";
 
 <!--여기까지 헤더-->
 
-<!--여기부터 아래를 수정하세요 -->
-<!--여기부터 아래를 수정하세요 -->
 
 <!-- 인덱스 상단 움직이는 이미지 -->
 	<div id="topimg" style="position: relative;">
 		<img src="img/top2.gif" width="700" height="450"
 			style="filter: brightness(50%);" class="d-block w-100" id="topimg">
-		<h1
-			style="color: white; font-size: 30px; text-align: center; line-height: 200%; position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%);">
-			<b class="toptext">하이미디어 학원에서<br>개발자의 꿈을 이루세요
-			</b>
+		<h1 class="toph1" style="color: white; font-size: 30px; text-align: center; line-height: 200%; position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%);">
+			<b class="toptext">하이미디어 학원에서<br>개발자의 꿈을 이루세요	</b>
 		</h1>
 
 		<c:choose>
